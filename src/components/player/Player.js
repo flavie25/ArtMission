@@ -6,7 +6,6 @@ import audio from '../../Assets/audio.mp3'
 const Player = () => {
   return (
     <div className={style.player}>
-      <p>player</p>
       <ReactAudioPlayer
         src={audio}
         controls

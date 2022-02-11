@@ -1,0 +1,14 @@
+.question{
+  margin-top: 20px;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.question p{
+  margin-top: 70px;
+  font-size: 2.5rem;
+  font-family: sans-serif;
+}
