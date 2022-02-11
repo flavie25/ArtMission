@@ -5,8 +5,10 @@ import style from './question.module.css';
 
 const Question1 = () => {
   const wrong = () =>{
+    
     console.log("loupé");
     alert("dommage");
+    
   }
   const right = () => {
     console.log("gg");

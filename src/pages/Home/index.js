@@ -11,7 +11,7 @@ const Home = () =>{
             <h1>Hello</h1>
             <p>kjfhjhkzgrqghrehghroghroge</p>
             <Player />
-            <Link to="/warning" className="">question</Link>
+            <Link to="/question" className="">question</Link>
         </div>      
     )
 }
