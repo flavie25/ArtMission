@@ -1,6 +1,4 @@
 .question{
-  margin-top: 20px;
-  background-color: grey;
   display: flex;
   flex-direction: column;
   justify-content: center;

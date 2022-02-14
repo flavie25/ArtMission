@@ -6,16 +6,9 @@ import audio from '../../Assets/audio.mp3'
 
 
 const Player = () => {
-  // const playerOn = () =>{
-  //   const url ={audio};
-  //   ReactAudioPlayer({ url, playing: true });
-  //   ("caca")
-  // }
   return (
     <div className={style.player}>
-      {/* <button onClick={playerOn}>Audio</button> */}
       <AudioPlayer src={audio} autoPlay={true}/>
-      <AudioPlayer/>
     </div>
   );
 };
