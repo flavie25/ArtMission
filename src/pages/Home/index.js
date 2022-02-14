@@ -8,7 +8,7 @@ const Home = () =>{
     return (
         <div className={style.home}>
             <div className={style.topFlex}>
-                <img src={polygon} alt="image de polygone" />
+                <img src={polygon} alt="polygone" />
                 <h2>Bienvenu sur</h2>
                 <h1>ART'MISSION</h1>
                 <p>L’expérience se réalise dans la salle d’Odilon Redon et l’art autour de 1900</p>

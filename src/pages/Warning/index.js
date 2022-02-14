@@ -9,11 +9,11 @@ const Warning = () =>{
     return (
         <div className={style.warning}>
             <div className={style.headphone}>
-                <img src={headphone} alt="image de casque" />
+                <img src={headphone} alt="casque" />
                 <p>Utilisez vos écouteurs pour profiter pleinement de l'expérience</p>
             </div>
             <div className={style.warningLogo}>
-                <img src={warning} alt="image panneau attention" />
+                <img src={warning} alt="panneau attention" />
                 <p>Rappel</p>
             </div>
             <p>Il est interdit de toucher les oeuvres</p>

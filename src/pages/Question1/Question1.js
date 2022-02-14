@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import React, { useState } from 'react';
-import Button from '../../components/button';
 import Player from '../../components/player/Player';
 import style from './question.module.css';
 
