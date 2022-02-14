@@ -1,9 +1,15 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AppContext from '../../contexts/AppContext'
 
+import WrongButton from '../wrongButton'
+
 const Question = ({numQuestion}) => {
-    const { questions } = useContext(AppContext)    
+    const { questions } = useContext(AppContext) 
+    const [answerPerson, setAnswerPerson] = useState(false);
+    const answerQuestion = () =>{
+        setAnswerPerson(!answerPerson) ;
+    } 
     return (
     <div>
         <div className="text">
@@ -11,7 +17,7 @@ const Question = ({numQuestion}) => {
         </div>
         <div className="question">
             {questions[numQuestion - 1].answers.map((answer) => 
-            answer.correct ? <Link className="answerButton" to='/warning'>{answer.text}</Link> : <button className="answerButton wrong">{answer.text}</button>)}   
+            answer.correct ? <Link className="answerButton" to='/warning'>{answer.text}</Link> : <WrongButton buttonName={answer.text}></WrongButton>)}   
         </div>
     </div>
   );
