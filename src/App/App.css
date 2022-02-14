@@ -32,6 +32,18 @@
   font-family: 'Space Mono', monospace;
 }
 
+button, a{
+  border: none;
+  background-color: white;
+  color: #101010;
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
