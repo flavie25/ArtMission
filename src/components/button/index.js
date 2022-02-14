@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Button = ({onClick,buttonName, style}) =>{
+const Button = ({onClick, buttonName, style}) =>{
 
     return ( 
         <div>
