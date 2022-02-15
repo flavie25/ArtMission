@@ -1,7 +1,10 @@
 .answerButton{
-    background-color: green;
+    background-color: white;
 }
-
 .wrongButton.wrong{
     background-color: red;
+}
+.wrongButton.wrong, .answerButton{
+    width: 60px;
+    height: 60px;
 }

@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AppContext from '../../contexts/AppContext'
 import Header from '../../components/header/Header.js'
-import style from './question.css';
+import './question.css';
 
 import WrongButton from '../wrongButton'
 
@@ -17,19 +17,24 @@ const Question = ({numQuestion, numScreen}) => {
     let seconds = d.getUTCSeconds()
     return (
     <div className="question">
-        <Header screen={numScreen} />
-        {questions[numQuestion - 1].texts.map((text) => (
-            <div className="textContainer">
-                <div className="leftText">
-                    <p>Agent.206</p>
-                    <p>{hours}.{minutes}.{seconds}</p>
+        <div className="top">
+        <Header  screen={numScreen}/>
+            {questions[numQuestion - 1].texts.map((text) => (
+                <div className="textContainer">
+                    <div className="leftText">
+                        <p>Agent.206</p>
+                        <p id="date">{hours}.{minutes}.{seconds}</p>
+                    </div>
+                    <p id="text">{text}</p>
                 </div>
-                {text}
+            ))}
+        </div>
+        <div className="bottom">
+            <div className="answers">
+                {questions[numQuestion - 1].answers.map((answer) => 
+                answer.correct ? <Link className="answerButton" to='/warning'>{answer.text}</Link> : <WrongButton buttonName={answer.text}></WrongButton>)}   
             </div>
-        ))}
-        <div className="question">
-            {questions[numQuestion - 1].answers.map((answer) => 
-            answer.correct ? <Link className="answerButton" to='/warning'>{answer.text}</Link> : <WrongButton buttonName={answer.text}></WrongButton>)}   
+            <Link className="backButton" to='/'>retour</Link>
         </div>
     </div>
   );
