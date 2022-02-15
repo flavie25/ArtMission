@@ -4,7 +4,7 @@ import Question from '../../components/question/question';
 const Question2 = () => {
   return (
     <div>
-      <Question numQuestion={2} numScreen={5}/>
+      <Question numQuestion={2} numScreen={5} linkTo={"/question3"}/>
     </div>
   );
 };

@@ -4,7 +4,7 @@ const Question1 = () => {
 
   return (
     <div>
-      <Question numQuestion={1} numScreen={3}/>
+      <Question numQuestion={1} numScreen={3} linkTo={"/question3"}/>
     </div>
   );
 };

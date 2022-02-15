@@ -1,4 +1,19 @@
-.question3 .answers{
-    margin-top: 10px;
-    display: block !important;
+.question3 .answers, .question3 .wrongButton.wrong{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 204px;
+    margin: auto;
+}
+.question3 .answerButton, .question3 .wrongButton.wrong{
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    padding: 5px;
+    margin: 10px auto;
+} 
+.question3 .answers a, .question3 .wrongButton.wrong a{
+    padding: 5px;
+    width: fit-content;
+    margin: 10px auto;
 }
