@@ -10,6 +10,11 @@
     width: 56px;
 }
 
+.buttonPlayPause{
+    background-color: black;
+    border: 2px solid #fff;
+}
+
 .header_lottiePlayer__cjR2j svg{
     transform: none !important;
   }
