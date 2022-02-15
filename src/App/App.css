@@ -41,6 +41,7 @@ button{
   margin: 10px;
   font-weight: 700;
   text-transform: uppercase;
+  font-family: 'Space Mono', monospace;
 }
 a{
   text-transform: uppercase;
@@ -50,6 +51,7 @@ a{
   color: white;
   text-decoration: none;
   padding: 10px;
+  font-family: 'Space Mono', monospace;
 }
 
 @keyframes App-logo-spin {
