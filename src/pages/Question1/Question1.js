@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Question from '../../components/question/question';
 import style from './question.module.css';
 import Header from '../../components/header/Header.js'
-import Player from './../../components/player'
+import Player from '../../components/audioPlayer'
 
 const Question1 = () => {
   const date = () => {
