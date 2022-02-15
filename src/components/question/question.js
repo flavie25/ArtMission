@@ -7,7 +7,7 @@ import './question.css';
 import WrongButton from '../wrongButton'
 import Terminal from '../terminal/terminal';
 
-const Question = ({numQuestion, numScreen}) => {
+const Question = ({numQuestion, numScreen, linkTo}) => {
     const { questions } = useContext(AppContext)
     return (
     <div className="question">
