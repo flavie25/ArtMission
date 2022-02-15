@@ -9,7 +9,6 @@ const Terminal = ({tableau, numStep}) => {
   let seconds = d.getUTCSeconds()
 
   return (
-    <div >
       <div className="top">
         {tableau[numStep - 1].texts.map((text) => (
           <div className="textContainer">
@@ -21,7 +20,6 @@ const Terminal = ({tableau, numStep}) => {
           </div>
         ))}
       </div>
-    </div>
   );
 };
 
