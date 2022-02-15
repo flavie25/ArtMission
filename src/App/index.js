@@ -12,9 +12,9 @@ function App() {
   const [questions] = useState([
     {order:1, 
     texts:[
-      <p>Ok, bien joué !</p>,
-      <p>Maintenant, il me faut une lettre qui se répète dans le nom et le prénom de l’artiste.</p>,
-      <p>Observe le panneau descriptif de l’oeuvre.</p>
+      "Ok, bien joué !",
+      "Maintenant, il me faut une lettre qui se répète dans le nom et le prénom de l’artiste.",
+      "Observe le panneau descriptif de l’oeuvre."
     ],
     answers:[
       {text:"A", correct:false},
@@ -24,8 +24,8 @@ function App() {
     },
     {order:2, 
       texts:[
-        <p>Génial !</p>,
-        <p>Pour cet indice, j’ai besoin de la première consonne qui apparaît dans le nom de l’oeuvre.</p>
+        "Génial !",
+        "Pour cet indice, j’ai besoin de la première consonne qui apparaît dans le nom de l’oeuvre."
       ],
       answers:[
         {text:"A", correct:false},
@@ -35,8 +35,8 @@ function App() {
       },
       {order:3, 
         texts:[
-          <p>Super, on y est presque.</p>,
-          <p>Autour de toi il doit y avoir une statue portant une armure. J’ai besoin de son nom.</p>
+          "Super, on y est presque.",
+          "Autour de toi il doit y avoir une statue portant une armure. J’ai besoin de son nom."
         ],
         answers:[
           {text:"Jeanne d’Arc", correct:true},

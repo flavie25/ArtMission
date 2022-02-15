@@ -32,7 +32,7 @@
   font-family: 'Space Mono', monospace;
 }
 
-button, a{
+button{
   border: none;
   background-color: white;
   color: #101010;
@@ -41,7 +41,15 @@ button, a{
   margin: 10px;
   font-weight: 700;
   text-transform: uppercase;
+}
+a{
+  text-transform: uppercase;
+  border: solid white 1px;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
   text-decoration: none;
+  padding: 10px;
 }
 
 @keyframes App-logo-spin {
