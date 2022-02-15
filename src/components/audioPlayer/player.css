@@ -1,3 +1,6 @@
+.player{
+    height: fit-content;
+}
 .rhap_progress-section{
     display: none;
 }
@@ -13,6 +16,13 @@
 .buttonPlayPause{
     background-color: black;
     border: 2px solid #fff;
+    padding: 10px 12px 4px 12px;
+    margin: 6px;
+}
+
+.buttonPlayPause img{
+    width: 22px;
+    height: 26px;
 }
 
 .header_lottiePlayer__cjR2j svg{
