@@ -6,7 +6,6 @@ const WrongButton = ({buttonName}) =>{
     const [answer, setAnswer] = useState(false);
     const cssChange = () =>{
         setAnswer(!answer);
-        console.log("ok")
     }
     return ( 
         <div>
