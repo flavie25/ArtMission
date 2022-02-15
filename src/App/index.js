@@ -64,8 +64,20 @@ function App() {
       textButton:"Je suis devant l'oeuvre'"
     },
   ])
+  const [audios] = useState([
+    {screen: 1, url:'Audio/boss-1.wav'},
+    {screen: 2, url:'Audio/agent208-1.mp3'},
+    {screen: 3, url:'Audio/agent208-2.wav'},
+    {screen: 4, url:'Audio/agent208-3.wav'},
+    {screen: 5, url:'Audio/agent208-4.wav'},
+    {screen: 6, url:'Audio/agent208-5.wav'},
+    {screen: 7, url:'Audio/agent208-6.wav'},
+    {screen: 8, url:'Audio/agent208-7.wav'},
+    {screen: 9, url:'Audio/boss-2.wav'},
+    {screen: 10, url:'Audio/boss-3.wav'}
+  ])
   return (
-    <Context.Provider value={{ questions, researches }}>
+    <Context.Provider value={{ questions, researches, audios }}>
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home/>} />

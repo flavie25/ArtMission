@@ -4,7 +4,7 @@ import animation from '../../Assets/Top_Art_Mission.json'
 import style from './header.module.css'
 import Player from '../../components/audioPlayer'
 
-const Header = () => {
+const Header = ({screen}) => {
   React.useEffect(() =>{
     lottie.loadAnimation({
       container: document.querySelector('#lottie-player'),
@@ -15,9 +15,10 @@ const Header = () => {
     });
    }) 
   
+
   return (
     <div className={style.header}>
-      <Player />
+      <Player screen={screen}/>
       <div id="lottie-player" className={style.lottiePlayer}></div>
     </div>
   );

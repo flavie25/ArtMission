@@ -4,7 +4,12 @@
 
 .rhap_main-controls button{
     background-color: black;
+    border: 2px solid #fff;
     margin: 0;
     height: 56px;
     width: 56px;
 }
+
+.header_lottiePlayer__cjR2j svg{
+    transform: none !important;
+  }

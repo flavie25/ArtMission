@@ -5,7 +5,7 @@ const Question1 = () => {
 
   return (
     <div>
-      <Question numQuestion={1} />
+      <Question numQuestion={1} numScreen={2}/>
     </div>
   );
 };

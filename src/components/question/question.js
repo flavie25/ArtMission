@@ -6,7 +6,7 @@ import style from './question.css';
 
 import WrongButton from '../wrongButton'
 
-const Question = ({numQuestion}) => {
+const Question = ({numQuestion, numScreen}) => {
     const { questions } = useContext(AppContext) 
     const d = new Date()
     let day = d.getDate()
@@ -17,7 +17,7 @@ const Question = ({numQuestion}) => {
     let seconds = d.getUTCSeconds()
     return (
     <div className="question">
-        <Header />
+        <Header screen={numScreen} />
         {questions[numQuestion - 1].texts.map((text) => (
             <div className="textContainer">
                 <div className="leftText">
@@ -35,4 +35,4 @@ const Question = ({numQuestion}) => {
   );
 };
 
-export default Question;
+export default Question
