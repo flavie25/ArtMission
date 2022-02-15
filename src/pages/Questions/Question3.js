@@ -5,7 +5,7 @@ import './questions.css';
 const Question3 = () => {
   return (
     <div className="question3">
-        <Question numQuestion={3} numScreen={5}/>
+        <Question numQuestion={3} numScreen={7}/>
     </div>
   );
 };

@@ -1,35 +1,19 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext} from 'react';
 import { Link } from 'react-router-dom';
 import AppContext from '../../contexts/AppContext'
 import Header from '../../components/header/Header.js'
 import './question.css';
 
 import WrongButton from '../wrongButton'
+import Terminal from '../terminal/terminal';
 
 const Question = ({numQuestion, numScreen}) => {
-    const { questions } = useContext(AppContext) 
-    const d = new Date()
-    let day = d.getDate()
-    let month1 = 1 + d.getMonth()
-    let year = d.getFullYear()
-    let hours = 1 + d.getUTCHours()
-    let minutes = d.getUTCMinutes()
-    let seconds = d.getUTCSeconds()
+    const { questions } = useContext(AppContext)
     return (
     <div className="question">
         <Header  screen={numScreen}/>
         <div className="topBottom">
-            <div className="top">
-                {questions[numQuestion - 1].texts.map((text) => (
-                    <div className="textContainer">
-                        <div className="leftText">
-                            <p>Agent.206</p>
-                            <p id="date">{hours}.{minutes}.{seconds}</p>
-                        </div>
-                        <p id="text">{text}</p>
-                    </div>
-                ))}
-            </div>
+            <Terminal tableau={questions} numStep={numQuestion}/>
             <div className="bottom">
                 <div className="answers">
                     {questions[numQuestion - 1].answers.map((answer) => 
@@ -37,7 +21,6 @@ const Question = ({numQuestion, numScreen}) => {
                 </div>
                 <Link className="backButton" to='/'>retour</Link>
             </div>
-        
         </div>
     </div>
   );

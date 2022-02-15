@@ -9,6 +9,7 @@ import Question1 from '../pages/Questions/Question1';
 import Context from '../contexts/AppContext';
 import Question2 from '../pages/Questions/Question2';
 import Question3 from '../pages/Questions/Question3';
+import Researche1 from '../pages/Researches/Researche1';
 
 function App() {
   const [questions] = useState([
@@ -50,19 +51,19 @@ function App() {
   const [researches] = useState([
     {order:1, 
       texts:[
-        <p>Agent 206 à l’appareil.</p>,
-        <p>Le voleur a laissé des indices, rendez-vous devant ce tableau;</p>
+        "Agent 206 à l’appareil.",
+        "Le voleur a laissé des indices, rendez-vous devant ce tableau;"
       ],
-      urlImg: "",
+      urlImg: "./../Assets/eugene-carriere.jpg",
       textButton:"Je suis devant le tableau"
     },
     {order:2, 
       texts:[
-        <p>Ça me semble correct.</p>,
-        <p>Malheureusement, je n’ai que ça pour identifier la prochaine oeuvre.</p>,
-        <p>Elle devrait être dans la même salle. Observe autour de toi.</p>
+        "Ça me semble correct.",
+        "Malheureusement, je n’ai que ça pour identifier la prochaine oeuvre.",
+        "Elle devrait être dans la même salle. Observe autour de toi."
       ],
-      urlImg: "",
+      urlImg: "./../Assets/vierge.jpg",
       textButton:"Je suis devant l'oeuvre'"
     },
   ])
@@ -87,6 +88,7 @@ function App() {
           <Route exact path="/question" element={<Question1/>} />
           <Route exact path="/question2" element={<Question2/>} />
           <Route exact path="/question3" element={<Question3/>} />
+          <Route exact path="/researche" element={<Researche1/>} />
         </Routes>
       </BrowserRouter>
     </Context.Provider>

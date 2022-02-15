@@ -27,12 +27,7 @@
     align-items: center;
     margin-bottom: 40px;
 }
-.answerButton{
-    background-color: green;
-}
-.answerButton.wrong{
-    background-color: red;
-}
+
 .question p{
     font-size: 15px;
 }

@@ -2,7 +2,7 @@
     background-color: white;
 }
 .wrongButton.wrong{
-    background-color: red;
+    background-color: #7E7D7D;
 }
 .wrongButton.wrong, .answerButton{
     width: 60px;
