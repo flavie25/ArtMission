@@ -13,6 +13,10 @@ import Researche1 from '../pages/Researches/Researche1';
 import Credits from '../pages/credits/Credits';
 import Researche2 from '../pages/Researches/Researche2';
 import Question4 from '../pages/Questions/Question4';
+import Researche3 from '../pages/Researches/Researche3';
+import FinalChoice from '../pages/End/FinalChoice';
+import Win from '../pages/End/Win';
+import Lose from '../pages/End/Lose';
 
 function App() {
   const [questions] = useState([
@@ -29,37 +33,37 @@ function App() {
     ]
     },
     {order:2, 
+    texts:[
+      "Génial !",
+      "Pour cet indice, j’ai besoin de la première consonne qui apparaît dans le nom de l’oeuvre."
+    ],
+    answers:[
+      {text:"A", correct:false},
+      {text:"R", correct:false},
+      {text:"V", correct:true}
+    ]
+    },
+    {order:3, 
+    texts:[
+      "Super, on y est presque.",
+      "Autour de toi il doit y avoir une statue portant une armure. J’ai besoin de son nom."
+    ],
+    answers:[
+      {text:"Jeanne d’Arc", correct:true},
+      {text:"Buste de Jane de Poupelet", correct:false},
+      {text:"Femme debout", correct:false}
+    ]
+    },
+    {order:4, 
       texts:[
-        "Génial !",
-        "Pour cet indice, j’ai besoin de la première consonne qui apparaît dans le nom de l’oeuvre."
+        "Selon toi, quelle est la prochaine oeuvre qui va être volée ?"
       ],
       answers:[
-        {text:"A", correct:false},
-        {text:"R", correct:false},
-        {text:"V", correct:true}
+        {text:"Img/assia.png", correct:false},
+        {text:"Img/femme-debout.png", correct:false},
+        {text:"Img/eve.png", correct:true}
       ]
-      },
-      {order:3, 
-        texts:[
-          "Super, on y est presque.",
-          "Autour de toi il doit y avoir une statue portant une armure. J’ai besoin de son nom."
-        ],
-        answers:[
-          {text:"Jeanne d’Arc", correct:true},
-          {text:"Buste de Jane de Poupelet", correct:false},
-          {text:"Femme debout", correct:false}
-        ]
-        },
-        {order:4, 
-          texts:[
-            "Selon toi, quelle est la prochaine oeuvre qui va être volée ?"
-          ],
-          answers:[
-            {text:"Img/assia.png", correct:false},
-            {text:"Img/femme-debout.png", correct:false},
-            {text:"Img/eve.png", correct:true}
-          ]
-          }
+    }
   ])
   const [researches] = useState([
     {order:1, 
@@ -97,11 +101,35 @@ function App() {
     {screen: 6, url:'Audio/agent208-5.mp3'},
     {screen: 7, url:'Audio/agent208-6.mp3'},
     {screen: 8, url:'Audio/agent208-7.mp3'},
-    {screen: 9, url:'Audio/boss-2.mp3'},
-    {screen: 10, url:'Audio/boss-3.mp3'}
+    {screen: 9, url:'Audio/boss-3.mp3'},
+    {screen: 10, url:'Audio/boss-2.mp3'}
   ])
+
+  const [ending] = useState([
+    {order: 1, 
+    texts:[
+      "Bien joué !",
+      "Je pense que tu as trouvé l’oeuvre.",
+      "La statue d’Eve est un chef d’oeuvre qui vaut des millions.",
+      "Vole-la et on se partage les gains."
+    ]},
+    {order: 2, 
+      texts:[
+        "Félicitations Agent 208 !",
+        "Vous avez passé avec succès l’épreuve. Il n’y a jamais eu de voleur, nous souhaitions tester votre fiabilité et votre honnêteté.",
+        "C’est avec plaisir que je vous annonce que vous avez été reçu.",
+        "Bienvenue Agent 208 !"
+    ]},
+    {order: 3, 
+      texts:[
+        "Agent 208, vous avez échoué au test !",
+        "Il n’y a jamais eu de voleur. Vous avez cédé à la tentation en privilégiant  l’argent à la culture.",
+        "C’est avec dépit que je vous annonce que vous n’êtes pas reçu en tant qu’espion."
+    ]}
+  ])
+
   return (
-    <Context.Provider value={{ questions, researches, audios }}>
+    <Context.Provider value={{ questions, researches, audios, ending }}>
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home/>} />
@@ -112,6 +140,10 @@ function App() {
           <Route exact path="/question4" element={<Question4/>} />
           <Route exact path="/researche" element={<Researche1/>} />
           <Route exact path="/researche2" element={<Researche2/>} />
+          <Route exact path="/researche3" element={<Researche3/>} />
+          <Route exact path="/finalchoice" element={<FinalChoice/>} />
+          <Route exact path="/win" element={<Win/>} />
+          <Route exact path="/lose" element={<Lose/>} />
           <Route exact path="/credits" element={<Credits/>} />
         </Routes>
       </BrowserRouter>
