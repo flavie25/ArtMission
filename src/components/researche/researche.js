@@ -6,7 +6,7 @@ import style from './research.module.css'
 
 import AppContext from './../../contexts/AppContext'
 
-const Researche = ({numScreen, numResearche, linkTo, textLinkTo}) => {
+const Researche = ({numScreen, numResearche, linkTo}) => {
     const {researches} = useContext(AppContext);
     console.log( researches[numResearche - 1].urlImg)
 
@@ -16,7 +16,7 @@ const Researche = ({numScreen, numResearche, linkTo, textLinkTo}) => {
         <div className={style.topBottom}>
           <Terminal tableau={researches} numStep={numResearche}/>
           <img src={ researches[numResearche - 1].urlImg} />
-          <Link to={linkTo}>{textLinkTo}</Link>
+          <Link to={linkTo}>{researches[numResearche - 1].textButton}</Link>
         </div>
     </div>
   ); 
