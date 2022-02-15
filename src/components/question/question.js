@@ -17,7 +17,7 @@ const Question = ({numQuestion, numScreen, linkTo}) => {
             <div className="bottom">
                 <div className="answers">
                     {questions[numQuestion - 1].answers.map((answer) => 
-                    answer.correct ? <Link className="answerButton" to={linkTo}>{answer.text}</Link> : <WrongButton buttonName={answer.text}></WrongButton>)}   
+                    answer.correct ? <Link className="answerButton" to={linkTo}>{answer.text}></Link> : <WrongButton buttonName={answer.text}></WrongButton>)}   
                 </div>
                 <Link className="backButton" to="/">retour</Link>
             </div>
