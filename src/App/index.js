@@ -10,6 +10,7 @@ import Context from '../contexts/AppContext';
 import Question2 from '../pages/Questions/Question2';
 import Question3 from '../pages/Questions/Question3';
 import Researche1 from '../pages/Researches/Researche1';
+import Researche2 from '../pages/Researches/Researche2';
 
 function App() {
   const [questions] = useState([
@@ -54,7 +55,7 @@ function App() {
         "Agent 206 à l’appareil.",
         "Le voleur a laissé des indices, rendez-vous devant ce tableau;"
       ],
-      urlImg: "./../Assets/eugene-carriere.jpg",
+      urlImg: "Img/eugene-carriere.jpg",
       textButton:"Je suis devant le tableau"
     },
     {order:2, 
@@ -63,7 +64,7 @@ function App() {
         "Malheureusement, je n’ai que ça pour identifier la prochaine oeuvre.",
         "Elle devrait être dans la même salle. Observe autour de toi."
       ],
-      urlImg: "./../Assets/vierge.jpg",
+      urlImg: "Img/vierge.jpg",
       textButton:"Je suis devant l'oeuvre'"
     },
   ])
@@ -89,6 +90,7 @@ function App() {
           <Route exact path="/question2" element={<Question2/>} />
           <Route exact path="/question3" element={<Question3/>} />
           <Route exact path="/researche" element={<Researche1/>} />
+          <Route exact path="/researche2" element={<Researche2/>} />
         </Routes>
       </BrowserRouter>
     </Context.Provider>

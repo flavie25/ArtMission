@@ -1,12 +1,12 @@
 import Researche from "../../components/researche/researche";
 
-const Researche1 = () => {
+const Researche2 = () => {
 
   return (
     <div>
-      <Researche numScreen={2} numResearche={1}/>
+      <Researche numScreen={4} numResearche={2}/>
     </div>
   );
 };
 
-export default Researche1;
+export default Researche2;
