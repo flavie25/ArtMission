@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import Question from '../../components/question/question';
 
 const Question1 = () => {

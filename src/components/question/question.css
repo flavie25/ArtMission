@@ -6,8 +6,18 @@
     margin: 0 24px;
     height: 100vh;
 }
-.top{
+.topBottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     margin: 0 24px;
+    height: 94vh;
+    width: 100%;
+    margin: 0 24px;
+}
+.top{
+
     width: 100%;
 }
 .bottom{
@@ -15,7 +25,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     margin-bottom: 40px;
 }
 .answerButton{

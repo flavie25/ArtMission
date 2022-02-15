@@ -4,9 +4,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Home from 'pages/Home';
 import Warning from 'pages/Warning';
-import Question1 from '../pages/Question1/Question1';
+import Question1 from '../pages/Questions/Question1';
 
 import Context from '../contexts/AppContext';
+import Question2 from '../pages/Questions/Question2';
+import Question3 from '../pages/Questions/Question3';
 
 function App() {
   const [questions] = useState([
@@ -83,6 +85,8 @@ function App() {
           <Route exact path="/" element={<Home/>} />
           <Route exact path="/warning" element={<Warning/>} />
           <Route exact path="/question" element={<Question1/>} />
+          <Route exact path="/question2" element={<Question2/>} />
+          <Route exact path="/question3" element={<Question3/>} />
         </Routes>
       </BrowserRouter>
     </Context.Provider>

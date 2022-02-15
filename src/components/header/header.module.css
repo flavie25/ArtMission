@@ -3,6 +3,7 @@
   display: flex;
   border-bottom: solid white 1px;
   padding: 30px 0;
+  height: 6vh;
 }
 .lottiePlayer {
   width: 80%;
