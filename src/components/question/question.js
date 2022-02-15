@@ -6,10 +6,7 @@ import WrongButton from '../wrongButton'
 
 const Question = ({numQuestion}) => {
     const { questions } = useContext(AppContext) 
-    const [answerPerson, setAnswerPerson] = useState(false);
-    const answerQuestion = () =>{
-        setAnswerPerson(!answerPerson) ;
-    } 
+
     return (
     <div>
         <div className="text">
