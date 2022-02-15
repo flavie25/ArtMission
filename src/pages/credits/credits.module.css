@@ -1,3 +1,10 @@
+.credit{
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+  margin: 15px;
+  height: 95vh;
+}
 .credit h1{
   font-size: 24px;
   font-weight: 400;

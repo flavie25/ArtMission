@@ -113,7 +113,6 @@ function App() {
           <Route exact path="/researche" element={<Researche1/>} />
           <Route exact path="/researche2" element={<Researche2/>} />
           <Route exact path="/credits" element={<Credits/>} />
-       
         </Routes>
       </BrowserRouter>
     </Context.Provider>
