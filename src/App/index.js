@@ -12,6 +12,7 @@ import Question3 from '../pages/Questions/Question3';
 import Researche1 from '../pages/Researches/Researche1';
 import Credits from '../pages/credits/Credits';
 import Researche2 from '../pages/Researches/Researche2';
+import Question4 from '../pages/Questions/Question4';
 
 function App() {
   const [questions] = useState([
@@ -48,7 +49,17 @@ function App() {
           {text:"Buste de Jane de Poupelet", correct:false},
           {text:"Femme debout", correct:false}
         ]
-        }
+        },
+        {order:4, 
+          texts:[
+            "Selon toi, quelle est la prochaine oeuvre qui va être volée ?"
+          ],
+          answers:[
+            {text:"Img/assia.png", correct:false},
+            {text:"Img/femme-debout.png", correct:false},
+            {text:"Img/eve.png", correct:true}
+          ]
+          }
   ])
   const [researches] = useState([
     {order:1, 
@@ -66,7 +77,15 @@ function App() {
         "Elle devrait être dans la même salle. Observe autour de toi."
       ],
       urlImg: "Img/vierge.jpg",
-      textButton:"Je suis devant l'oeuvre'"
+      textButton:"Je suis devant l'oeuvre"
+    },
+    {order:3, 
+      texts:[
+        "Tous les indices ont été trouvés ! Grâce à toi, on a déjà 2 lettres : le è et le v, et on sait que l’oeuvre représente une figure féminine.",
+        "Selon mes sources son nom est composé de 3 lettres."
+      ],
+      urlImg: "",
+      textButton:"J'ai compris"
     },
   ])
   const [audios] = useState([
@@ -90,9 +109,11 @@ function App() {
           <Route exact path="/question" element={<Question1/>} />
           <Route exact path="/question2" element={<Question2/>} />
           <Route exact path="/question3" element={<Question3/>} />
+          <Route exact path="/question4" element={<Question4/>} />
           <Route exact path="/researche" element={<Researche1/>} />
-          <Route exact path="/credits" element={<Credits/>} />
           <Route exact path="/researche2" element={<Researche2/>} />
+          <Route exact path="/credits" element={<Credits/>} />
+       
         </Routes>
       </BrowserRouter>
     </Context.Provider>

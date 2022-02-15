@@ -17,3 +17,21 @@
     width: fit-content;
     margin: 10px auto;
 }
+
+/*Question4*/
+
+.wrapper-imgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%
+}
+.container-img{
+    width: 30%;
+    height: auto;
+}
+.img-q4{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
