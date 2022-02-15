@@ -21,7 +21,7 @@ const Question1 = () => {
       <Header />
       <Question numQuestion={1} />
       {/* <Player /> */}
-        
+      
     </div>
   );
 };
