@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Question from '../../components/question/question';
 import style from './question.module.css';
 import Header from '../../components/header/Header.js'
+import Player from './../../components/player'
 
 const Question1 = () => {
   const date = () => {
@@ -20,8 +21,8 @@ const Question1 = () => {
     <div className={style.question}>
       <Header />
       <Question numQuestion={1} />
-      {/* <Player /> */}
-      
+      <Player />
+
     </div>
   );
 };
