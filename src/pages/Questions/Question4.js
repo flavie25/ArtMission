@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../../components/header/Header';
 import Terminal from '../../components/terminal/terminal';
+import WrongImg from '../../components/wrongImg/wrongImg';
 import AppContext from '../../contexts/AppContext'
 
 const Question4 = () => {
@@ -17,7 +18,7 @@ const Question4 = () => {
             <div class="wrapper-imgs">
               {questions[3].answers.map((url) =>
               <div className="container-img">
-                <img className="img-q4" src={url.text}/>
+                {url.correct ? <Link to={'/researche3'}><img className="img-q4" src={url.text}/></Link> : <WrongImg style="img-q4" url={url.text}/>} 
               </div>
               )}
             </div>
