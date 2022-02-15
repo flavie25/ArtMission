@@ -5,17 +5,13 @@ import Header from '../../components/header/Header.js'
 import Player from '../../components/audioPlayer'
 
 const Question1 = () => {
-  const date = () => {
     const d = new Date()
     let day = d.getDate()
     let month1 = 1 + d.getMonth()
     let year = d.getFullYear()
     let hours = 1 + d.getUTCHours()
     let minutes = d.getUTCMinutes()
-   return (
-       <p>{day}/{month1}/{year} à {hours}:{minutes}</p>
-   )
-  }
+    let seconds = d.getUTCSeconds()
 
   return (
     <div className={style.question}>
