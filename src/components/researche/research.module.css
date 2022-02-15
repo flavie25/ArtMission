@@ -1,0 +1,22 @@
+.research{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 24px;
+  height: 97vh;
+}
+.topBottom img{
+  width: 165px;
+  height: auto;
+}
+.topBottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 24px;
+    height: 94vh;
+    width: 100%;
+    margin: 0 24px;
+}

@@ -91,8 +91,8 @@ function App() {
           <Route exact path="/question2" element={<Question2/>} />
           <Route exact path="/question3" element={<Question3/>} />
           <Route exact path="/researche" element={<Researche1/>} />
-          <Route exact path="/credits" element={<Credits/>} />
           <Route exact path="/researche2" element={<Researche2/>} />
+          <Route exact path="/credits" element={<Credits/>} />
         </Routes>
       </BrowserRouter>
     </Context.Provider>
