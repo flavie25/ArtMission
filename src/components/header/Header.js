@@ -2,6 +2,7 @@ import React from 'react';
 import lottie from 'lottie-web';
 import animation from '../../Assets/Top_Art_Mission.json'
 import style from './header.module.css'
+import Player from '../../components/audioPlayer'
 
 const Header = () => {
   React.useEffect(() =>{
@@ -13,11 +14,11 @@ const Header = () => {
       autoplay: true,
     });
    }) 
-  console.log("oui");
   
-
   return (
-    <div id="lottie-player"  className={style.lottiePlayer}> 
+    <div className={style.header}>
+      <Player />
+      <div id="lottie-player" className={style.lottiePlayer}></div>
     </div>
   );
 };
