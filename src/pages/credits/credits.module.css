@@ -1,0 +1,8 @@
+.credit h1{
+  font-size: 24px;
+  font-weight: 400;
+}
+.credit p, .credit li{
+  font-size: 15px;
+  font-weight: 400;
+}
