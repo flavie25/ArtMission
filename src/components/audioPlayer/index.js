@@ -1,7 +1,5 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import './player.css';
-import AudioPlayer from 'react-h5-audio-player';
-// import audio from '../../Audio/agent208-1.mp3'
 import play from './../../Assets/audioPlay.png'
 import pause from './../../Assets/audioPause.png'
 
@@ -10,21 +8,18 @@ import AppContext from './../../contexts/AppContext'
 
 const Player = ({screen}) => {
   const {audios} = useContext(AppContext);
-  const audio = audios[screen - 1].url
-  console.log(audio)
-  // const audio = "agent208-1.mp3"
+  const urlAudio = audios[screen - 1].url;
+  const[playing, setPlaying] = useState(true);
+
+  const playPause = () => {
+    const audio = document.getElementById('audioplayer');
+    playing ? audio.pause() : audio.play();
+    setPlaying(!playing)
+  }
   return (
     <div className="player">
-      {/* <AudioPlayer 
-        src={audio}
-        autoPlay={true} 
-        customIcons={
-          {play: <img src={play} />, 
-          pause: <img src={pause}/> }}
-        showJumpControls={false} 
-        customVolumeControls={[]} 
-        customAdditionalControls={[]}/> */}
-        <audio src={audio} autoPlay/>
+        <button className="buttonPlayPause" onClick={playPause}>{playing ? <img src={pause}/> : <img src={play}/>}</button>
+        <audio id="audioplayer" src={urlAudio} autoPlay/>
     </div>
   );
 };
