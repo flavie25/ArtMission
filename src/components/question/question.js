@@ -8,10 +8,6 @@ import WrongButton from '../wrongButton'
 
 const Question = ({numQuestion}) => {
     const { questions } = useContext(AppContext) 
-    const [answerPerson, setAnswerPerson] = useState(false);
-    const answerQuestion = () =>{
-        setAnswerPerson(!answerPerson) ;
-    } 
     const d = new Date()
     let day = d.getDate()
     let month1 = 1 + d.getMonth()
