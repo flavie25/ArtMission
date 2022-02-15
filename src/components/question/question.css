@@ -1,7 +1,29 @@
+.question{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 24px;
+  }
 .answerButton{
     background-color: green;
 }
-
 .answerButton.wrong{
     background-color: red;
+}
+.question p{
+    font-size: 15px;
+    border-bottom: solid white 1px;
+}
+.textContainer{
+    display: flex;
+}
+.leftText{
+    display: flex;
+    flex-direction: column;
+}
+.leftText p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 10px;
 }

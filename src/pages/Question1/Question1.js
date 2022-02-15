@@ -1,24 +1,11 @@
 import React, { useState } from 'react';
 import Question from '../../components/question/question';
-import style from './question.module.css';
-import Header from '../../components/header/Header.js'
-import Player from '../../components/audioPlayer'
 
 const Question1 = () => {
-    const d = new Date()
-    let day = d.getDate()
-    let month1 = 1 + d.getMonth()
-    let year = d.getFullYear()
-    let hours = 1 + d.getUTCHours()
-    let minutes = d.getUTCMinutes()
-    let seconds = d.getUTCSeconds()
 
   return (
-    <div className={style.question}>
-      <Header />
+    <div>
       <Question numQuestion={1} />
-      <Player />
-
     </div>
   );
 };

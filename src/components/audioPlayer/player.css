@@ -4,4 +4,7 @@
 
 .rhap_main-controls button{
     background-color: black;
+    margin: 0;
+    height: 56px;
+    width: 56px;
 }
