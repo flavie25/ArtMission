@@ -10,16 +10,20 @@ const Player = ({screen}) => {
   const {audios} = useContext(AppContext);
   const urlAudio = audios[screen - 1].url;
   const[playing, setPlaying] = useState(true);
-
-  const playPause = () => {
+  const onEnded = () =>{
+    setPlaying(false)
+  }
+  
+  const playPause = () => { 
     const audio = document.getElementById('audioplayer');
     playing ? audio.pause() : audio.play();
     setPlaying(!playing)
   }
+
   return (
     <div className="player">
         <button className="buttonPlayPause" onClick={playPause}>{playing ? <img src={pause} alt="button pause"/> : <img src={play} alt="button play"/>}</button>
-        <audio id="audioplayer" src={urlAudio} autoPlay/>
+        <audio onEnded={onEnded} id="audioplayer" src={urlAudio} autoPlay/>
     </div>
   );
 };
