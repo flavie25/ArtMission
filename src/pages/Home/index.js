@@ -13,7 +13,7 @@ const Home = () =>{
                 </div>
                 <h1>ART'MISSION</h1>
                 <p>L’expérience se réalise dans la salle d’Odilon Redon et l’art autour de 1900</p>
-                <Link to="/warning" className="">commencer l'expérience</Link>
+                <Link to="/warning" className={style.warnButton}>commencer l'expérience</Link>
             </div>
             <Link to="/credits" className={style.credits}>Crédits</Link>
         </div>      
