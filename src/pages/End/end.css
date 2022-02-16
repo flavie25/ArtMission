@@ -1,0 +1,6 @@
+.endButton{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  text-align: center;
+}
