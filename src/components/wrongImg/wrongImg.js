@@ -8,9 +8,7 @@ const WrongImg= ({url, style}) =>{
         setAnswer(!answer);
     }
     return ( 
-        <div>
-            <button className={answer ? "img-q4 wrongImg" : "img-q4" } onClick={cssChange}><img className={style} src={url}/></button>
-        </div>      
+        <a className={answer ? "linkImg wrongImg" : "linkImg" } onClick={cssChange}><img className={style} src={url}/></a>  
     )
 }
 

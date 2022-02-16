@@ -1,3 +1,7 @@
-.img-q4 .wrongImg{
-    background-color: #7E7D7D;
+.linkImg.wrongImg{
+    border: none;
+}
+
+.linkImg.wrongImg img{
+  background-color: rgba(128, 128, 128, 0.678);
 }
