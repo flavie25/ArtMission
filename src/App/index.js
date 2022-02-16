@@ -16,7 +16,7 @@ import Question4 from '../pages/Questions/Question4';
 import Researche3 from '../pages/Researches/Researche3';
 import FinalChoice from '../pages/End/FinalChoice';
 import Win from '../pages/End/Win';
-import Lose from '../pages/End/Lose';
+import Defeat from '../pages/End/Defeat';
 
 function App() {
   const [questions] = useState([
@@ -143,7 +143,7 @@ function App() {
           <Route exact path="/researche3" element={<Researche3/>} />
           <Route exact path="/finalchoice" element={<FinalChoice/>} />
           <Route exact path="/win" element={<Win/>} />
-          <Route exact path="/lose" element={<Lose/>} />
+          <Route exact path="/lose" element={<Defeat/>} />
           <Route exact path="/credits" element={<Credits/>} />
         </Routes>
       </BrowserRouter>

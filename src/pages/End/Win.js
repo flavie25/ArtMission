@@ -12,7 +12,7 @@ const Win = () => {
         <Header screen={10}/>
         <Terminal tableau={ending} numStep={2}/>
         <div className="endButton">
-          <Link to='/'>Terminé</Link> 
+          <Link to='/credits'>Terminé</Link> 
           <Link to='/lose'>Voir l'autre fin</Link> 
         </div>
     </div>

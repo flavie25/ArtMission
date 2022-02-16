@@ -17,7 +17,7 @@ const Warning = () =>{
                 <p>Rappel</p>
             </div>
             <p>Il est interdit de toucher les oeuvres</p>
-            <Link to="/question" exact>j'ai compris</Link>
+            <Link to="/researche" exact>j'ai compris</Link>
         </div>      
     )
 }

@@ -18,11 +18,11 @@ const Question4 = () => {
             <div class="wrapper-imgs">
               {questions[3].answers.map((url) =>
               <div className="container-img">
-                {url.correct ? <Link className="linkImg" to={'/researche3'}><img className="img-q4" src={url.text}/></Link> : <WrongImg style="img-q4" url={url.text}/>} 
+                {url.correct ? <Link className="linkImg" to={'/finalchoice'}><img className="img-q4" src={url.text}/></Link> : <WrongImg style="img-q4" url={url.text}/>} 
               </div>
               )}
             </div>
-            <Link to="/">RETOUR</Link>
+            <Link to="/researche3">RETOUR</Link>
           </div>
         </div>
     </div>

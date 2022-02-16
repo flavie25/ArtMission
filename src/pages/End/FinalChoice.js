@@ -12,7 +12,7 @@ const FinalChoice = () => {
         <Terminal tableau={ending} numStep={1}/>
         
         <Link to='/win'>J'accepte</Link> 
-        <Link to='/win'>Je refuse</Link> 
+        <Link to='/lose'>Je refuse</Link> 
     </div>
   );
 };

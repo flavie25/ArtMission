@@ -7,7 +7,7 @@ import './question.css';
 import WrongButton from '../wrongButton'
 import Terminal from '../terminal/terminal';
 
-const Question = ({numQuestion, numScreen, linkTo}) => {
+const Question = ({numQuestion, numScreen, linkTo, backButton}) => {
     const { questions } = useContext(AppContext)
     return (
     <div className="question">
@@ -19,7 +19,7 @@ const Question = ({numQuestion, numScreen, linkTo}) => {
                     {questions[numQuestion - 1].answers.map((answer) => 
                     answer.correct ? <Link className="answerButton" to={linkTo}>{answer.text}</Link> : <WrongButton buttonName={answer.text}></WrongButton>)}   
                 </div>
-                <Link className="backButton" to="/">retour</Link>
+                <Link className="backButton" to={backButton}>retour</Link>
             </div>
         </div>
     </div>
