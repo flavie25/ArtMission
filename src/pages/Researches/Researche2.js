@@ -4,7 +4,7 @@ const Researche2 = () => {
 
   return (
     <div>
-      <Researche numScreen={4} numResearche={2} linkTo={"/question2"}/>
+      <Researche numScreen={4} numResearche={2} linkTo={"/question2"}  speakerName={true}/>
     </div>
   );
 };

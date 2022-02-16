@@ -7,12 +7,12 @@ import Header from '../header/Header';
 
 import AppContext from '../../contexts/AppContext';
 
-const Information = ({numScreen, linkTo, numInformation}) => {
+const Information = ({numScreen, linkTo, numInformation, speakerName}) => {
   const {informations} = useContext(AppContext);
   return (
     <div className={style.research}>
       <Header screen={numScreen}/>
-      <Terminal tableau={informations} numStep={numInformation}/>
+      <Terminal speakerId={speakerName} tableau={informations} numStep={numInformation}/>
       <div className={styles.infoBottom}>
         <Link to={linkTo}>{informations[numInformation - 1].textButton}</Link>
       </div>

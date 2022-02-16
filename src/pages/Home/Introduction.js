@@ -4,7 +4,7 @@ import Information from "../../components/information/information";
 const Introduction = () => {
   return (
     <div>
-      <Information numScreen={1} numInformation={1} linkTo={"/researche"}/>
+      <Information numScreen={1} numInformation={1} linkTo={"/researche"} speakerName={false}/>
     </div>
   );
 };

@@ -7,13 +7,13 @@ import './question.css';
 import WrongButton from '../wrongButton'
 import Terminal from '../terminal/terminal';
 
-const Question = ({numQuestion, numScreen, linkTo, backButton}) => {
+const Question = ({numQuestion, numScreen, linkTo, backButton, speakerName}) => {
     const { questions } = useContext(AppContext)
     return (
     <div className="question">
         <Header screen={numScreen}/>
         <div className="topBottom">
-            <Terminal tableau={questions} numStep={numQuestion}/>
+            <Terminal speakerId={speakerName} tableau={questions} numStep={numQuestion}/>
             <div className="bottom">
                 <div className="answers">
                     {questions[numQuestion - 1].answers.map((answer) => 

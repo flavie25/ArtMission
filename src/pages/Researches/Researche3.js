@@ -3,7 +3,7 @@ const Researche3 = () => {
 
   return (
     <div>
-      <Information numScreen={7} numInformation={2} linkTo={"/question4"}/>
+      <Information numScreen={7} numInformation={2} linkTo={"/question4"} speakerName={true}/>
     </div>
   );
 };
