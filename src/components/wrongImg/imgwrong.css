@@ -1,7 +1,9 @@
 .linkImg.wrongImg{
-    border: none;
+    background: transparent;
 }
-
+.linkImg.wrong, .linkImg.wrongImg{
+  padding:0;
+}
 .linkImg.wrongImg img{
   background-color: rgba(128, 128, 128, 0.678);
 }
