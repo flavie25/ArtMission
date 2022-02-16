@@ -16,7 +16,7 @@ const Warning = () =>{
                 <img src={warning} alt="panneau attention" />
                 <p>Rappel</p>
             </div>
-            <p>Il est interdit de toucher les oeuvres</p>
+            <p>Nous vous rappelons qu’il est interdit de toucher aux oeuvres</p>
             <Link to="/researche" exact>j'ai compris</Link>
         </div>      
     )

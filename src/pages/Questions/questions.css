@@ -1,9 +1,11 @@
+.answers{
+    margin: 3vh 0;
+}
 .question3 .answers, .question3 .wrongButton.wrong{
     display: flex;
     flex-direction: column;
     text-align: center;
     height: 204px;
-    margin: auto;
 }
 .question3 .answerButton, .question3 .wrongButton.wrong{
     width: auto;

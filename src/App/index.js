@@ -120,7 +120,7 @@ function App() {
     {order: 2, 
       texts:[
         "Félicitations Agent 208 !",
-        "Vous avez passé avec succès l’épreuve. Il n’y a jamais eu de voleur, nous souhaitions tester votre fiabilité et votre honnêteté.",
+        "Vous avez passé avec succès le test. Il n’y a jamais eu de voleur, nous souhaitions tester votre fiabilité et votre honnêteté.",
         "C’est avec plaisir que je vous annonce que vous avez été reçu.",
         "Bienvenue Agent 208 !"
     ]},
