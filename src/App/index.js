@@ -28,7 +28,7 @@ function App() {
     ],
     answers:[
       {text:"A", correct:false},
-      {text:"E", correct:true},
+      {text:"é", correct:true},
       {text:"U", correct:false}
     ]
     },
@@ -38,7 +38,7 @@ function App() {
       "Pour cet indice, j’ai besoin de la première consonne qui apparaît dans le nom de l’oeuvre."
     ],
     answers:[
-      {text:"A", correct:false},
+      {text:"G", correct:false},
       {text:"R", correct:false},
       {text:"V", correct:true}
     ]
@@ -99,10 +99,11 @@ function App() {
     {screen: 4, url:'Audio/agent208-3.mp3'},
     {screen: 5, url:'Audio/agent208-4.mp3'},
     {screen: 6, url:'Audio/agent208-5.mp3'},
-    {screen: 7, url:'Audio/agent208-6.mp3'},
-    {screen: 8, url:'Audio/agent208-7.mp3'},
-    {screen: 9, url:'Audio/boss-3.mp3'},
-    {screen: 10, url:'Audio/boss-2.mp3'}
+    {screen: 7, url:'Audio/agent208-6-1.mp3'},
+    {screen: 8, url:'Audio/agent208-6-2.mp3'},
+    {screen: 9, url:'Audio/agent208-7.mp3'},
+    {screen: 10, url:'Audio/boss-3.mp3'},
+    {screen: 11, url:'Audio/boss-2.mp3'}
   ])
 
   const [ending] = useState([
