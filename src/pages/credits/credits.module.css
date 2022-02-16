@@ -13,3 +13,7 @@
   font-size: 15px;
   font-weight: 400;
 }
+.credit a{
+  width: fit-content;
+  margin: 0 auto;
+}
