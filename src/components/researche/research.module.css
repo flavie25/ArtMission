@@ -1,10 +1,11 @@
 .research{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   margin: 0 24px;
-  height: 97vh;
 }
+
 .imgResearche{
   display: flex;
   justify-content: center;
@@ -27,5 +28,5 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-bottom: 40px;
+    margin: 0 24px;
 }

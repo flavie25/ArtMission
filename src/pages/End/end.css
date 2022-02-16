@@ -18,7 +18,6 @@
 }
 .finalChoice{
   flex-direction: row;
-  margin-top: 165px;
   gap: 50px;
 }
 .finalChoice a{
