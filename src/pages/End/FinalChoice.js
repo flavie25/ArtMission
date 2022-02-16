@@ -10,7 +10,7 @@ const FinalChoice = () => {
     const {ending} = useContext(AppContext)
   return (
     <div className="question">
-        <Header screen={9}/>
+        <Header screen={9}  speakerId={true}/>
           <Terminal speakerId={true} tableau={ending} numStep={1}/>
           <div className="endButton finalChoice">
             <Link to='/lose'>J'accepte</Link> 

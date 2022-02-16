@@ -12,7 +12,7 @@ const Researche = ({numScreen, numResearche, linkTo, speakerName}) => {
 
   return (
     <div className={style.research}>
-        <Header screen={numScreen}/>
+        <Header screen={numScreen} speakerId={speakerName}/>
         <div className={style.topBottom}>
           <Terminal speakerId={speakerName} tableau={researches} numStep={numResearche}/>
           <div className={style.imgResearche}>

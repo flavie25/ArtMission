@@ -11,7 +11,7 @@ const Information = ({numScreen, linkTo, numInformation, speakerName}) => {
   const {informations} = useContext(AppContext);
   return (
     <div className={style.research}>
-      <Header screen={numScreen}/>
+      <Header screen={numScreen} speakerId={speakerName}/>
       <Terminal speakerId={speakerName} tableau={informations} numStep={numInformation}/>
       <div className={styles.infoBottom}>
         <Link to={linkTo}>{informations[numInformation - 1].textButton}</Link>

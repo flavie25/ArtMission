@@ -11,7 +11,7 @@ const Question = ({numQuestion, numScreen, linkTo, backButton, speakerName}) => 
     const { questions } = useContext(AppContext)
     return (
     <div className="question">
-        <Header screen={numScreen}/>
+        <Header screen={numScreen} speakerId={speakerName}/>
         <div className="topBottom">
             <Terminal speakerId={speakerName} tableau={questions} numStep={numQuestion}/>
             <div className="bottom">
