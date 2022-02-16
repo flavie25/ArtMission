@@ -6,6 +6,10 @@
   margin: 0 24px;
 }
 
+.research a{
+  margin-bottom: 20px;
+}
+
 .imgResearche{
   display: flex;
   justify-content: center;

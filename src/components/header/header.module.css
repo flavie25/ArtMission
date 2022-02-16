@@ -3,6 +3,11 @@
   display: flex;
   padding: 20px 0;
   justify-content: space-around;
+  position: fixed;
+  background-color: black;
+  box-shadow: -2px -4px 4px 11px #000000d1;
+  top: 0;
+  left: 0;
 }
 .lottiePlayer {
   width: fit-content;

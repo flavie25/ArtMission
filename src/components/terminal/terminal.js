@@ -1,5 +1,6 @@
 import React from 'react';
 import './../question/question.css'
+import './terminal.css'
 
 
 const Terminal = ({tableau, numStep}) => {
@@ -9,7 +10,7 @@ const Terminal = ({tableau, numStep}) => {
   let seconds = d.getUTCSeconds()
 
   return (
-      <div className="top">
+      <div className="page-head">
         {tableau[numStep - 1].texts.map((text) => (
           <div className="textContainer">
             <div className="leftText">

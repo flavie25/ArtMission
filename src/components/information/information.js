@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
-import style from '../researche/research.module.css'
+import styles from './information.module.css'
+import style from './../researche/research.module.css'
 import { Link } from 'react-router-dom';
 import Terminal from '../terminal/terminal';
 import Header from '../header/Header';
@@ -11,8 +12,8 @@ const Information = ({numScreen, linkTo, numInformation}) => {
   return (
     <div className={style.research}>
       <Header screen={numScreen}/>
-      <div className={style.topBottom}>
-        <Terminal tableau={informations} numStep={numInformation}/>
+      <Terminal tableau={informations} numStep={numInformation}/>
+      <div className={styles.infoBottom}>
         <Link to={linkTo}>{informations[numInformation - 1].textButton}</Link>
       </div>
     </div>

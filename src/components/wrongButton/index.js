@@ -5,7 +5,7 @@ import './wrong.css'
 const WrongButton = ({buttonName}) =>{
     const [answer, setAnswer] = useState(false);
     const cssChange = () =>{
-        setAnswer(!answer);
+        setAnswer(true);
     }
     return ( 
         <div>
