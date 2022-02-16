@@ -16,3 +16,16 @@
 .win .textContainer{
   padding: 15px 0;
 }
+.finalChoice{
+  flex-direction: row;
+  margin-top: 165px;
+  gap: 50px;
+}
+.finalChoice a{
+  background-color: white;
+  color: black;
+  font-weight: 700;
+}
+.win #text{
+  width: 250px;
+}
