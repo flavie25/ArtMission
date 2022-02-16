@@ -12,8 +12,8 @@ const FinalChoice = () => {
         <Header screen={9}/>
         <Terminal tableau={ending} numStep={1}/>
         <div className="endButton finalChoice">
-          <Link to='/win'>J'accepte</Link> 
-          <Link to='/lose'>Je refuse</Link> 
+          <Link to='/lose'>J'accepte</Link> 
+          <Link to='/win'>Je refuse</Link> 
         </div>
     </div>
   );
