@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './../question/question.css'
 import './terminal.css'
 

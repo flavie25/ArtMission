@@ -23,6 +23,7 @@ body{
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 40px;
 }
 .topFlex{
   margin: 3vh 0;
