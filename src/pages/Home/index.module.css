@@ -52,3 +52,8 @@ body{
   font-weight: 500;
   text-transform: none;
 }
+.warnButton{
+  color: black;
+  background-color: white;
+  font-weight: 700;
+}
