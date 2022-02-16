@@ -9,7 +9,7 @@ import AppContext from '../../contexts/AppContext';
 const Information = ({numScreen, linkTo, numInformation}) => {
   const {informations} = useContext(AppContext);
   return (
-    <div>
+    <div className={style.research}>
       <Header screen={numScreen}/>
       <div className={style.topBottom}>
         <Terminal tableau={informations} numStep={numInformation}/>
