@@ -10,8 +10,8 @@ const Win = () => {
     const {ending} = useContext(AppContext)
   return (
     <div className="question">
-        <Header screen={11}/>
-        <Terminal tableau={ending} numStep={2}/>
+        <Header screen={11} speakerId={false}/>
+        <Terminal tableau={ending} numStep={2} speakerId={false}/>
         <div className="endButton">
           <Link to='/credits'>Terminé</Link> 
           <Link to='/lose'>Voir l'autre fin</Link> 
