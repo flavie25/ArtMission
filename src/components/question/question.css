@@ -1,7 +1,6 @@
 .question{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     margin: 0 24px;
     height: 100vh;
@@ -9,16 +8,15 @@
 .topBottom{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 0 24px;
-    height: 94vh;
     width: 100%;
     margin: 0 24px;
 }
 .top{
-
     width: 100%;
+    border-bottom: 1px solid #fff;
 }
 .bottom{
     display: flex;
@@ -36,7 +34,7 @@
     padding: 25px 0;
     justify-content: space-around;
     width: 100%;
-    border-bottom: solid white 1px;
+    border-top: solid white 1px;
 }
 #text{
     margin-block-start: 0;
@@ -72,7 +70,4 @@
     text-decoration: none;
     width: 20px;
     height: 20px;
-}
-.backButton{
-    margin-top: 80px;
 }
