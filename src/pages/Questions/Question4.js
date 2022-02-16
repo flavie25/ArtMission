@@ -11,9 +11,7 @@ const Question4 = () => {
     <div className="question4">
         <Header screen={8}/>
         <div className="topBottom">
-          <div className="top">
             <Terminal tableau={questions} numStep={4}/>
-          </div>
           <div className="bottom">
             <div class="wrapper-imgs">
               {questions[3].answers.map((url) =>

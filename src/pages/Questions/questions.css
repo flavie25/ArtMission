@@ -24,7 +24,6 @@
 .question4{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     margin: 0 24px;
     height: 100vh;
@@ -51,15 +50,12 @@
 .question4 .topBottom{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    margin: 0 24px;
-    height: 94vh;
     width: 100%;
     margin: 0 24px;
 }
 .question4 .bottom{
-    height: 56vh;
+    margin:40px 0;
 }
 
 .linkImg{

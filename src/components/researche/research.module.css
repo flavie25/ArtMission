@@ -1,7 +1,6 @@
 .research{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   margin: 0 24px;
   height: 97vh;
@@ -27,8 +26,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 0 24px;
-    height: 94vh;
     width: 100%;
-    margin: 0 24px;
+    margin-bottom: 40px;
 }

@@ -105,8 +105,8 @@ function App() {
     {screen: 7, url:'Audio/agent208-6-1.mp3'},
     {screen: 8, url:'Audio/agent208-6-2.mp3'},
     {screen: 9, url:'Audio/agent208-7.mp3'},
-    {screen: 10, url:'Audio/boss-2.mp3'},
-    {screen: 11, url:'Audio/boss-3.mp3'}
+    {screen: 10, url:'Audio/boss-3.mp3'},
+    {screen: 11, url:'Audio/boss-2.mp3'}
   ])
 
   const [ending] = useState([
