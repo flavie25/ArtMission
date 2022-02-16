@@ -1,10 +1,9 @@
-import Researche from "../../components/researche/researche";
-
+import Information from "../../components/information/information";
 const Researche3 = () => {
 
   return (
     <div>
-      <Researche numScreen={7} numResearche={3} linkTo={"/question4"}/>
+      <Information numScreen={2} numInformation={2} linkTo={"question"}/>
     </div>
   );
 };

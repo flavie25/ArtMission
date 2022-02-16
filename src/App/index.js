@@ -17,8 +17,28 @@ import Researche3 from '../pages/Researches/Researche3';
 import FinalChoice from '../pages/End/FinalChoice';
 import Win from '../pages/End/Win';
 import Defeat from '../pages/End/Defeat';
+import Introduction from '../pages/Home/Introduction';
 
 function App() {
+  const [informations] = useState([
+    {order:1, 
+      texts:[
+        "Agent 208, une série de braquages a eu lieu dans différents musées de Bordeaux.",
+        "La Prochaine cible : Le Musée des Beaux-Arts",
+        "Votre première mission si vous l’acceptez : Identifier l’oeuvre qui sera volée ce soir.",
+        "L’agent 206 vous accompagnera tout au long de votre mission.",
+        "Faites-vous discret, ne vous faites pas repérer."
+      ],
+      textButton:"J’ai compris",
+    },
+    {order:2, 
+      texts:[
+        "Tous les indices ont été trouvés ! Grâce à toi, on a déjà 2 lettres : le è et le v, et on sait que l’oeuvre représente une figure féminine.",
+        "Selon mes sources son nom est composé de 3 lettres."
+      ],
+      textButton:"J'ai compris",
+    },
+  ])
   const [questions] = useState([
     {order:1, 
     texts:[
@@ -85,15 +105,6 @@ function App() {
       textButton:"Je suis devant l'oeuvre",
       alt:"Odilon Redon, Vierge."
     },
-    {order:3, 
-      texts:[
-        "Tous les indices ont été trouvés ! Grâce à toi, on a déjà 2 lettres : le è et le v, et on sait que l’oeuvre représente une figure féminine.",
-        "Selon mes sources son nom est composé de 3 lettres."
-      ],
-      urlImg: "",
-      textButton:"J'ai compris",
-      alt:""
-    },
   ])
   const [audios] = useState([
     {screen: 1, url:'Audio/boss-1.mp3'},
@@ -133,11 +144,12 @@ function App() {
   ])
 
   return (
-    <Context.Provider value={{ questions, researches, audios, ending }}>
+    <Context.Provider value={{ informations, questions, researches, audios, ending }}>
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home/>} />
           <Route exact path="/warning" element={<Warning/>} />
+          <Route exact path="/introduction" element={<Introduction/>} />
           <Route exact path="/question" element={<Question1/>} />
           <Route exact path="/question2" element={<Question2/>} />
           <Route exact path="/question3" element={<Question3/>} />
