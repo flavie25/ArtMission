@@ -8,7 +8,7 @@ const Defeat = () => {
   const {ending} = useContext(AppContext)
   return (
     <div className="Defeat">
-        <Header screen={11}/>
+        <Header screen={10}/>
         <Terminal tableau={ending} numStep={3}/>
         <Link to='/credits'>Terminé</Link> 
         <Link to='/win'>Voir l'autre fin</Link> 

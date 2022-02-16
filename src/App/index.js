@@ -59,9 +59,9 @@ function App() {
         "Selon toi, quelle est la prochaine oeuvre qui va être volée ?"
       ],
       answers:[
-        {text:"Img/assia.png", correct:false},
-        {text:"Img/femme-debout.png", correct:false},
-        {text:"Img/eve.png", correct:true}
+        {text:"Img/assia.png", correct:false, alt:"Charles Despiau, Assia"},
+        {text:"Img/femme-debout.png", correct:false, alt:"Henri Matisse, Femme debout (Etude pour Madeleine I)"},
+        {text:"Img/eve.png", correct:true, alt:"Charles Despiau, Eve"}
       ]
     }
   ])
@@ -72,7 +72,8 @@ function App() {
         "Le voleur a laissé des indices, rendez-vous devant ce tableau;"
       ],
       urlImg: "Img/eugene-carriere.jpg",
-      textButton:"Je suis devant le tableau"
+      textButton:"Je suis devant le tableau",
+      alt: "Eugène Carrière, Portrait de la dernière fille de l'artiste, Arsène."
     },
     {order:2, 
       texts:[
@@ -81,7 +82,8 @@ function App() {
         "Elle devrait être dans la même salle. Observe autour de toi."
       ],
       urlImg: "Img/vierge.jpg",
-      textButton:"Je suis devant l'oeuvre"
+      textButton:"Je suis devant l'oeuvre",
+      alt:"Odilon Redon, Vierge."
     },
     {order:3, 
       texts:[
@@ -89,7 +91,8 @@ function App() {
         "Selon mes sources son nom est composé de 3 lettres."
       ],
       urlImg: "",
-      textButton:"J'ai compris"
+      textButton:"J'ai compris",
+      alt:""
     },
   ])
   const [audios] = useState([

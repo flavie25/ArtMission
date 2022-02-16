@@ -15,7 +15,7 @@ const Researche = ({numScreen, numResearche, linkTo}) => {
         <Header screen={numScreen}/>
         <div className={style.topBottom}>
           <Terminal tableau={researches} numStep={numResearche}/>
-          <img src={ researches[numResearche - 1].urlImg} />
+          <img src={researches[numResearche - 1].urlImg} alt={researches[numResearche - 1].alt} />
           <Link to={linkTo}>{researches[numResearche - 1].textButton}</Link>
         </div>
     </div>

@@ -9,7 +9,7 @@ const Win = () => {
     const {ending} = useContext(AppContext)
   return (
     <div className="win">
-        <Header screen={10}/>
+        <Header screen={11}/>
         <Terminal tableau={ending} numStep={2}/>
         <div className="endButton">
           <Link to='/credits'>Terminé</Link> 

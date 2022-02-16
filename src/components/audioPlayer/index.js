@@ -18,7 +18,7 @@ const Player = ({screen}) => {
   }
   return (
     <div className="player">
-        <button className="buttonPlayPause" onClick={playPause}>{playing ? <img src={pause}/> : <img src={play}/>}</button>
+        <button className="buttonPlayPause" onClick={playPause}>{playing ? <img src={pause} alt="button pause"/> : <img src={play} alt="button play"/>}</button>
         <audio id="audioplayer" src={urlAudio} autoPlay/>
     </div>
   );
