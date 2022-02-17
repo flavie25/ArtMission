@@ -18,25 +18,19 @@ const Header = ({screen, speakerId}) => {
       autoplay: true,
     });
    }) 
-  
 
-  const location = useLocation();
 
-  const delayeScroll = () => {
-    window.setTimeout(scroll, 6000);
-    console.log("time")
-  }
 
   const scroll = () =>{
     document.getElementById('footer').scrollIntoView({ behavior: 'smooth', block: 'end' });
-    console.log("work")
   }
+  const location = useLocation();
   useEffect(() => {
-    console.log('Location changed');
+    const delayeScroll = () => {
+      window.setTimeout(scroll, 5000);
+    }
     delayeScroll()
   }, [location]);
-
- 
 
   return (
     <div className={style.header}>
