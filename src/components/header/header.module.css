@@ -9,6 +9,8 @@
   box-shadow: -2px -4px 4px 11px #000000d1;
   top: 0;
   left: 0;
+  z-index: 10;
+  scroll-behavior: smooth;
 }
 .lottiePlayer {
   width: fit-content;

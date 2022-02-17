@@ -4,6 +4,7 @@ import style from './../researche/research.module.css'
 import { Link } from 'react-router-dom';
 import Terminal from '../terminal/terminal';
 import Header from '../header/Header';
+import './../question/question.css'
 
 import AppContext from '../../contexts/AppContext';
 
@@ -12,9 +13,11 @@ const Information = ({numScreen, linkTo, numInformation, speakerName}) => {
   return (
     <div className={style.research}>
       <Header screen={numScreen} speakerId={speakerName}/>
-      <Terminal speakerId={speakerName} tableau={informations} numStep={numInformation}/>
-      <div className={styles.infoBottom}>
-        <Link to={linkTo}>{informations[numInformation - 1].textButton}</Link>
+      <div className="topBottom">
+        <Terminal speakerId={speakerName} tableau={informations} numStep={numInformation}/>
+        <div className={styles.infoBottom}>
+          <Link to={linkTo}>{informations[numInformation - 1].textButton}</Link>
+        </div>
       </div>
     </div>
   );

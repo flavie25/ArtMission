@@ -18,6 +18,7 @@ import FinalChoice from '../pages/End/FinalChoice';
 import Win from '../pages/End/Win';
 import Defeat from '../pages/End/Defeat';
 import Introduction from '../pages/Home/Introduction';
+import Footer from '../components/footer/footer';
 
 function App() {
   const [informations] = useState([
@@ -148,7 +149,7 @@ function App() {
     <Context.Provider value={{ informations, questions, researches, audios, ending }}>
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<Home/>} />
+          <Route exact path="/" element={<Home/>}/>
           <Route exact path="/warning" element={<Warning/>} />
           <Route exact path="/introduction" element={<Introduction/>} />
           <Route exact path="/question" element={<Question1/>} />
@@ -163,6 +164,7 @@ function App() {
           <Route exact path="/lose" element={<Defeat/>} />
           <Route exact path="/credits" element={<Credits/>} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </Context.Provider>
   );
