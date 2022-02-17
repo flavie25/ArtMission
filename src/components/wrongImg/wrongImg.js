@@ -8,7 +8,7 @@ const WrongImg= ({url, className, alt}) =>{
         setAnswer(true);
     }
     return ( 
-        <button href="" className={answer ? "linkImg wrongImg" : "linkImg wrong" } onClick={cssChange}><img alt={alt} className={className} src={url}/></button>  
+        <button href="" className={answer ? "linkImg wrongImg" : "linkImg wrong hidden-on-writing" } onClick={cssChange}><img alt={alt} className={className} src={url}/></button>  
     )
 }
 

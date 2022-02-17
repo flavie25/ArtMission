@@ -6,6 +6,7 @@ import style from './header.module.css'
 import Player from '../../components/audioPlayer'
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+// import App from '../../App/index'
 
 const Header = ({screen, speakerId}) => {
   const animationSpeaker = speakerId? animationA : animationB
@@ -19,18 +20,25 @@ const Header = ({screen, speakerId}) => {
     });
    }) 
 
+  //  const scroll = () =>{
+  //       document.getElementById('footer').scrollIntoView({ behavior: 'smooth', block: 'end' });
+  //     }
+  // const location = useLocation();
+  // useEffect(() => {
+  //   const delayeScroll = () => {
+  //     window.setTimeout(scroll, 5000);
+  //   }
+  //   delayeScroll()
+  // }, [location]);
 
-
-  const scroll = () =>{
-    document.getElementById('footer').scrollIntoView({ behavior: 'smooth', block: 'end' });
-  }
-  const location = useLocation();
-  useEffect(() => {
-    const delayeScroll = () => {
-      window.setTimeout(scroll, 5000);
-    }
-    delayeScroll()
-  }, [location]);
+  // useEffect(() => {
+  //   const scroll = () =>{
+  //     document.getElementById('footer').scrollIntoView({ behavior: 'smooth', block: 'end' });
+  //     // window.requestAnimationFrame(scroll())
+  //   }
+  //   scroll()
+  //   console.log('oui'); 
+  // }, []);
 
   return (
     <div className={style.header}>

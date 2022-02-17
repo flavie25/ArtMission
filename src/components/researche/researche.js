@@ -15,7 +15,7 @@ const Researche = ({numScreen, numResearche, linkTo, speakerName}) => {
         <Header screen={numScreen} speakerId={speakerName}/>
         <div className={style.topBottom}>
           <Terminal speakerId={speakerName} tableau={researches} numStep={numResearche}/>
-          <div className={style.imgResearche}>
+          <div className={style.imgResearche + ' hidden-on-writing'}>
             <img src={researches[numResearche - 1].urlImg} alt={researches[numResearche - 1].alt} />
           </div>
           <Link to={linkTo}>{researches[numResearche - 1].textButton}</Link>

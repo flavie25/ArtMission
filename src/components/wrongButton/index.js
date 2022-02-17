@@ -9,7 +9,7 @@ const WrongButton = ({buttonName}) =>{
     }
     return ( 
         <div>
-            <button className={answer ? "wrongButton wrong" : "answerButton" } onClick={cssChange}>{buttonName}</button>
+            <button className={answer ? "wrongButton wrong" : "answerButton hidden-on-writing" } onClick={cssChange}>{buttonName}</button>
         </div>      
     )
 }
