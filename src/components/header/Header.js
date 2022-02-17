@@ -22,12 +22,6 @@ const Header = ({screen, speakerId}) => {
 
   const location = useLocation();
 
-  useEffect(() => {
-    console.log('Location changed');
-    delayeScroll()
-  }, [location]);
-
-
   const delayeScroll = () => {
     window.setTimeout(scroll, 6000);
     console.log("time")
@@ -37,8 +31,12 @@ const Header = ({screen, speakerId}) => {
     document.getElementById('footer').scrollIntoView({ behavior: 'smooth', block: 'end' });
     console.log("work")
   }
+  useEffect(() => {
+    console.log('Location changed');
+    delayeScroll()
+  }, [location]);
 
-  window.onload = delayeScroll
+ 
 
   return (
     <div className={style.header}>
